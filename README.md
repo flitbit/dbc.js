@@ -1,4 +1,4 @@
-dbc.js
+dbc.js [![Build Status](https://travis-ci.org/flitbit/dbc.js.png)](http://travis-ci.org/flitbit/dbc.js)
 ======
 
 A compact design-by-contract helper for nodejs and the browser.
@@ -38,4 +38,4 @@ npm test
 mocha -R spec
 ```
 
-To run the same tests from a browser, open the `test/test.html` file in a browser.
+To run the same tests from a browser, open the `test/test.html` file directly from your file system.
