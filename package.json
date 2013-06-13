@@ -1,6 +1,6 @@
 {
 	"name": "dbc.js",
-	"version": "1.0",
+	"version": "1.0.0",
 	"author": "Phillip Clark <phillip@flitbit.com>",
 	"description": "A compact design-by-contract helper for nodejs and the browser.",
 	"keywords": ["dbc", "design", "contract"],
@@ -12,8 +12,6 @@
 	"scripts": {
 		"test": "mocha -R spec"
 	},
-	"dependencies": {
-	 },
 	"devDependencies": {
 			"expect.js": "~0.2.x",
 			"mocha": "~1.10.x"
