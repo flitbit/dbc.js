@@ -19,8 +19,14 @@
   }
 
   function ContractError(message) {
-    ContractError.super_.call(this, message);
-    Object.defineProperty(this, 'message', { value: message || '' });
+    ContractError.super_.call(this);
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(this, this.constructor);
+    }
+    Object.defineProperties(this, {
+      message: { value: message || '' },
+      error: { value: message || '', enumerable: true }
+    });
   }
   inherits(ContractError, Error);
 
